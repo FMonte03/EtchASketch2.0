@@ -11,25 +11,35 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="wrapper">
+        
             <div class="top">
     
-            <h1>Filippo's <br/> Etch A Sketch</h1>
+            <h1>Filippo's <br/> Etch-A-Sketch</h1>
             </div>
-            
+        <div class="wrapper">    
+
+            <div class="menu">
+                <input id="color" type="color">
+                <input type="range" min="1" max="100" value="5"  class="slider">
+               
+                <button id="reset">Reset</button>
+                
+                
+                <input type="button" id="downloadBtn" value="Download">
+            </div>
+
+
+
+
             <canvas id="canvas"></canvas>
             
                 
-                <div class="menu">
-                    <input type="range" min="1" max="100" value="5"  class="slider">
-                    <button id="reset">Reset</button>
-                    <input id="color" type="color">
-                    
-                    <input type="button" id="downloadBtn" value="Download">
-                </div>
-    
+                
                 
                 
     

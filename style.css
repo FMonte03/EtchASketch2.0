@@ -1,3 +1,36 @@
+body{
+
+background-color: rgb(247, 108, 108);
+
+}
+h1{
+text-align: center;
+color: yellow;
+font-family: 'Cabin Sketch', cursive;
+
+}
+
+
+
+.wrapper{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+gap: 50px;
+margin-left: 50px;
+
+}
+
+.menu{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 75px;
+  align-items: center;
+}
+
 canvas{
   border: solid black 1px;
+  background-color: white;
 }

@@ -5,8 +5,8 @@ const ctx = canvas.getContext('2d');
 
 
 
-canvas.width = window.innerWidth - canvas.offsetLeft ;
-canvas.height = window.innerHeight - canvas.offsetTop;  
+canvas.width = window.innerWidth - canvas.offsetLeft - 100;
+canvas.height = window.innerHeight - canvas.offsetTop - 50;  
 
 
 
@@ -33,18 +33,18 @@ function draw(e){
     if(!painting) return; 
     ctx.lineCap = "round";
    
-    ctx.lineTo(e.clientX - canvas.offsetLeft   , e.clientY - canvas.offsetTop + 50 ); 
+    ctx.lineTo(e.clientX - canvas.offsetLeft   , e.clientY - canvas.offsetTop  ); 
     ctx.stroke(); 
     ctx.beginPath();
-    ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop + 50 ); 
+    ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop ); 
 
 }
 
 //change size of stroke
 
-let slider = document.querySelector('input'); 
+let slider = document.querySelector('.slider'); 
 slider.addEventListener('change', () => { ctx.lineWidth = slider.value;
-console.log(ctx.lineWidth); })
+})
 
 //change color of stroke
 let color = document.querySelector('#color'); 
@@ -53,6 +53,8 @@ color.addEventListener('change', () => {ctx.strokeStyle = color.value; })
 //clear canvas
 const reset = document.querySelector('#reset')
 reset.addEventListener('click', () => {
+    slider.value = 5; 
+    color.value = '#000000'
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 } )
 
