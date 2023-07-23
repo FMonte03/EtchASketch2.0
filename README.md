@@ -1,0 +1,1 @@
+This project is an upgraded version of my Sketch Pad project. this time instead of using divs like I did on the SketchPad, I will be using a canvas. 
