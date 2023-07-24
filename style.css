@@ -30,6 +30,83 @@ margin-left: 50px;
   align-items: center;
 }
 
+
+#color{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  height: 75px;
+  width: 75px;
+  border: none;
+  cursor: pointer;
+ 
+}
+#color::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+}
+
+
+.slider {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%; 
+  height: 7px; 
+  background: yellow; 
+  outline: none; 
+  border-radius: 10px;
+  opacity: 0.8; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+
+.slider:hover {
+  opacity: 1; 
+}
+p{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.slider::-webkit-slider-thumb {
+  margin-top: 0px ;
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 15px; 
+  height: 15px; 
+  background: #ffffff; 
+  border: 1px black solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  color: yellow;
+  background-color: rgb(247, 108, 108);
+  border: 5px solid yellow;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.buttons:hover{
+  color:rgb(247, 108, 108) ;
+  background-color: yellow;
+  border: 5px solid rgb(247, 108, 108);
+
+}
+
+.buttons:active{
+  box-shadow: inset 0px 1px 2px 0px;
+  background-color: rgb(224, 224, 0);
+}
+
 canvas{
   border: solid black 1px;
   background-color: white;

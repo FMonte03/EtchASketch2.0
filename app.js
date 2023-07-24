@@ -55,6 +55,7 @@ const reset = document.querySelector('#reset')
 reset.addEventListener('click', () => {
     slider.value = 5; 
     color.value = '#000000'
+    ctx.lineWidth = slider.value;
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 } )
 
