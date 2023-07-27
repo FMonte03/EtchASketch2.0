@@ -1,6 +1,7 @@
 body{
 
-background-color: rgb(247, 108, 108);
+background-color: #DB040C;
+
 
 }
 h1{
@@ -25,9 +26,10 @@ margin-left: 50px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 75px;
+  justify-content: flex-end;
+  gap: 50px;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 
@@ -35,16 +37,16 @@ margin-left: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
-  height: 75px;
   width: 75px;
+  height: 75px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
- 
+  margin-top: 30px;
 }
 #color::-webkit-color-swatch {
-  border-radius: 50%;
-  border: 2px solid #f1f1f1;
+  border-radius: 15px;
+  border: none;
 }
 
 
@@ -89,16 +91,16 @@ p{
   height: 50px;
   border-radius: 10px;
   color: yellow;
-  background-color: rgb(247, 108, 108);
+  background-color: #DB040C;
   border: 5px solid yellow;
   font-weight: bold;
   font-size: 16px;
 }
 
 .buttons:hover{
-  color:rgb(247, 108, 108) ;
+  color:#DB040C ;
   background-color: yellow;
-  border: 5px solid rgb(247, 108, 108);
+  border: 5px solid #DB040C;
 
 }
 
@@ -111,3 +113,74 @@ canvas{
   border: solid black 1px;
   background-color: white;
 }
+.colorMenu{
+  box-sizing: border-box;
+  height: 350px;
+}
+
+.defaults{
+  height: 50%;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+.color{
+  height: 30px;
+border-radius: 5px;
+  margin: 5px;
+ flex: 0 1 20%;
+ border: solid black 3px;
+ cursor: pointer;
+}
+
+
+.colorMenu{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+border: yellow solid 5px;
+border-radius: 10px;
+background-color: rgb(231, 112, 108, .7);
+
+}
+
+
+
+[data-color= "FF0000"]{
+  background-color: #ff0000;
+}
+  [data-color="#00FF00"] {
+    background-color: #00FF00;
+  }
+  
+  [data-color="#0000FF"] {
+    background-color: #0000FF;
+  }
+  
+  [data-color="#FFFF00"] {
+    background-color: #FFFF00;
+  }
+  
+  [data-color="#FF00FF"] {
+    background-color: #FF00FF;
+  }
+  
+  [data-color="#00FFFF"] {
+    background-color: #00FFFF;
+  }
+  
+  [data-color="#FFFFFF"] {
+    background-color: #FFFFFF;
+  }
+  
+  [data-color="#000000"] {
+    background-color: #000000;
+  }
+  
+  [data-color="#808080"] {
+    background-color: #808080;
+  }
+

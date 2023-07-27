@@ -29,8 +29,15 @@ function mouseU(){
 
 }
 
+    
+
+
+
+
+
 function draw(e){
     if(!painting) return; 
+    
     ctx.lineCap = "round";
    
     ctx.lineTo(e.clientX - canvas.offsetLeft   , e.clientY - canvas.offsetTop  ); 
@@ -55,6 +62,7 @@ const reset = document.querySelector('#reset')
 reset.addEventListener('click', () => {
     slider.value = 5; 
     color.value = '#000000'
+    ctx.strokeStyle = '#000000'
     ctx.lineWidth = slider.value;
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 } )
@@ -72,8 +80,18 @@ function downloadImage() {
 let download = document.getElementById('downloadBtn')
 download.addEventListener('click', downloadImage)
 
+const colors = document.querySelectorAll('.color'); 
+
+colors.forEach(color => {
+    color.addEventListener('click', () => {
+        ctx.strokeStyle = color.getAttribute('data-color');
+    });
+
+
+});
+
 
 //canvas action listerner to draw lines. 
 canvas.addEventListener('mousedown', mouseD); 
-canvas.addEventListener('mouseup', mouseU); 
+document.addEventListener('mouseup', mouseU); 
 canvas.addEventListener('mousemove', draw); 
