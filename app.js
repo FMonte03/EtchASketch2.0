@@ -5,9 +5,10 @@ const ctx = canvas.getContext('2d');
 
 
 
-canvas.width = window.innerWidth - canvas.offsetLeft - 100;
-canvas.height = window.innerHeight - canvas.offsetTop - 50;  
-
+canvas.width = window.innerWidth - canvas.offsetLeft;
+canvas.height = window.innerHeight - canvas.offsetTop;  
+canvas.height = canvas.height * .95; 
+canvas.width = canvas.width* .9; 
 
 
 
