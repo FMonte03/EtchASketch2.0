@@ -12,6 +12,7 @@ h1{
 text-align: center;
 color: yellow;
 font-family: 'Cabin Sketch', cursive;
+font-size: 24px;
 
 }
 
@@ -119,7 +120,8 @@ canvas{
 }
 .colorMenu{
   box-sizing: border-box;
-  height: 75%;
+  height: 75%; 
+  width: 100%;
 }
 
 .defaults{
@@ -131,7 +133,7 @@ canvas{
   
 }
 .color{
-  height: 30px;
+  height: 20%;
 border-radius: 5px;
   margin: 5px;
  flex: 1 1 20%;

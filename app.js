@@ -7,8 +7,8 @@ const ctx = canvas.getContext('2d');
 
 canvas.width = window.innerWidth - canvas.offsetLeft;
 canvas.height = window.innerHeight - canvas.offsetTop;  
-canvas.height = canvas.height * .95; 
-canvas.width = canvas.width* .9; 
+canvas.height = canvas.height * .85; 
+canvas.width = canvas.width* .85; 
 
 
 
